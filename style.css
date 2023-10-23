@@ -1,0 +1,282 @@
+/* Configuração de smartphones até desktops com telas pequenas*/
+
+@media screen and (min-widht: 320px) and (max-width: 900px) {
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Início da estilização do main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 242, 245);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 4em;
+    color: rgb(18, 97, 199);
+    text-align: center;
+}
+
+#p1 {
+    margin-top: 20px;
+    width: 12em;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+    color: rgb(31, 30, 30);
+    text-align: center; 
+}
+
+.caixa2 {
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 10px;
+    width: 400px;
+    height: 21.25em;
+    background-color: white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.253);
+}
+
+#email, #senha {
+    display: block;
+    border-radius: 5px;
+    margin: 12px auto;
+    width: 92%;
+    height: 50px;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+#email::placeholder, #senha::placeholder {
+    padding-left: 15px;
+    color: rgb(138, 138, 138);
+    font-size: 15px;
+}
+
+#entrar {
+    margin-left: 15px;
+    border-radius: 5px;
+    width: 92%;
+    height: 45px;
+    background-color: rgb(24, 119, 242);
+    border-color: transparent;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#esqueceu-senha {
+    display: block;
+    padding-left: 135px;
+    margin: 20px 0;
+    color: #1877f2;;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#esqueceu-senha:hover {
+    text-decoration: underline;
+}
+
+#linha {
+    border: 1px solid rgb(225, 225, 226);
+    width: 92%;
+    margin: 15px auto; 
+}
+
+#criar-nova-conta {
+    margin: 10px 100px;
+    width: 50%;
+    height: 2.8em;
+    background-color: rgb(66, 183, 42);
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#p2 {
+    text-align: center;
+    margin-top: 19px;
+    padding-top: 20px;
+    background-color: rgb(240, 242, 245);
+    height: 95px;
+    width: 29em;
+    font-size: 0.9em;
+}
+
+#criar-pagina {
+    color: rgb(31, 30, 30);
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+#criar-pagina:hover {
+    text-decoration: underline;
+}
+
+/* Fim da estilização do main */
+
+/* Início da estilização da caixa-idiomas */
+
+.caixa-idiomas {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+}
+
+.idiomas{
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+    
+}
+
+.idiomas:hover {
+    text-decoration: underline;
+}
+
+#idioma-simbolo {
+    display: inline-block;
+    margin-left: 5px;
+    border: 1px solid rgb(173, 173, 173);
+    width: 30px;
+    background-color: rgb(240, 242, 245);
+    text-align: center;
+    font-weight: 900;  
+}
+
+#idioma-simbolo-link {
+    text-decoration: none;
+}
+
+#idioma-simbolo:hover {
+    background-color: rgb(236, 236, 236) ;
+}
+
+#idioma-simbolo:hover, .idiomas:last-child:hover {
+    cursor: pointer;
+}
+
+/* Fim da estilização da caixa-idiomas */
+
+/* Início da estilização da #linha2 */
+
+#linha2 {
+    border: 1px solid rgb(225, 225, 226);
+    margin: 10px 10px 10px 50px;  
+}
+
+/* Fim da estilização da #linha2 */
+
+/* Início da estilização da footer */
+
+footer {
+    margin-left: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.footer-links {
+    padding: 10px 10px 10px 0;
+    color: rgb(115, 115, 115);
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.75em;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+}
+
+#p3 {
+    display: block;
+    margin: 25px 0 25px 1px;
+    padding-bottom: 5px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.6em;
+    color: rgb(115, 115, 115);
+}
+
+/* Fim da estilização da footer */
+
+/* Para desktops com telas grandes */
+
+@media screen and (min-width: 901px) and (max-width: 1074px) {
+
+    .titulo-paragrafo {
+        margin-bottom: 50px;
+        margin-top: 100px;
+        margin-left: 10px;
+        position: absolute;
+        left: 50px; 
+    }
+
+    #p1 {
+        text-align: left
+    }
+
+    .caixa2-paragrafo2 {
+    margin-top: 50px; 
+    margin-left: 440px;
+    }
+}
+
+/* Para televisores e etc. */
+
+@media screen and (min-width: 1075px) {
+
+    .titulo-paragrafo {
+        margin-bottom: 50px;
+        margin-top: 100px;
+        margin-left: 10px;
+        position: absolute;
+        left: 180px; 
+    }
+
+    #p1 {
+        font-size: 1.7em;
+    }
+
+    .caixa2-paragrafo2 {
+    margin-top: 70px; 
+    margin-left: 440px;
+    }
+
+    .caixa-idiomas {
+        width: 700px;
+        margin-left: 300px;
+    }
+
+    #linha2 {
+        margin-left: 300px;
+        margin-right: 350px;
+    }
+
+    footer {
+        width: 700px;
+        margin-left: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
